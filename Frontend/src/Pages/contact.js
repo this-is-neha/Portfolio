@@ -114,14 +114,14 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        // Submit the form manually
+    
         const form = e.target;
         const data = new FormData(form);
-
+    
         fetch("/", {
             method: "POST",
-            body: data,
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(data).toString(),
         })
             .then(() => {
                 setMessageSent(true);
@@ -130,6 +130,7 @@ const Contact = () => {
             })
             .catch((error) => alert(error));
     };
+    
 
     return (
         <>
