@@ -25,8 +25,8 @@ const Projects = () => {
             description:
                 "A personal portfolio website to showcase my skills, projects, and achievements. It features a modern design with responsive layouts and a smooth user experience.",
             technologies: ["React.js", "Tailwind CSS", "JavaScript"],
-            demoLink: "https://your-portfolio-link.com", // Update with actual link if available
-            codeLink: "https://github.com/your-repo/portfolio",
+            demoLink: "https://iamnehashah.netlify.app", 
+            codeLink: "https://github.com/this-is-neha/Portfolio",
         },
     ];
 
