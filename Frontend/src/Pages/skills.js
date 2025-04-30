@@ -47,7 +47,7 @@ const Skills = () => {
             <Navbar />
             <div className="bg-gray-50 dark:bg-gray-900 py-16 min-h-screen">
                 <div className="max-w-6xl mx-auto px-6 lg:px-8">
-                    {/* Header Section */}
+                    
                     <div className="text-center mb-12">
                         <h1 className="text-5xl font-bold text-gray-800 dark:text-white">
                             My Skill Sets
@@ -57,7 +57,7 @@ const Skills = () => {
                         </p>
                     </div>
 
-                    {/* Skills Section */}
+                   
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {skills.map((skill, index) => (
                             <div

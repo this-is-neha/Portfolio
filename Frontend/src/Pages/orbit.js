@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../Components/navbar";
 import Footer from "../Components/footer";
-import photo2 from "../assets/orbit1.jpg"; // Example image for training/education
+import photo2 from "../assets/orbit1.jpg"; 
 
 const OrbitPage = () => {
   const { state } = useLocation();

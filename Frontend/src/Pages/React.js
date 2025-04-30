@@ -27,7 +27,7 @@ const ReactPage = () => {
           </p>
           <p className="text-gray-700 dark:text-gray-300 mb-4">{state.description}</p>
           
-          {/* Ensure the image is loaded correctly */}
+        
           <img
             src={imageToShow}
             alt="Trainingn"
