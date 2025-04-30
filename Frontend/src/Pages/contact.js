@@ -7,9 +7,23 @@
 
 //     const handleSubmit = (e) => {
 //         e.preventDefault();
-//         setMessageSent(true);
-//         setTimeout(() => setMessageSent(false), 5000);
+    
+//         const form = e.target;
+//         const data = new FormData(form);
+    
+//         fetch("/", {
+//             method: "POST",
+//             headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//             body: new URLSearchParams(data).toString(),
+//         })
+//             .then(() => {
+//                 setMessageSent(true);
+//                 setTimeout(() => setMessageSent(false), 5000);
+//                 form.reset();
+//             })
+//             .catch((error) => alert(error));
 //     };
+    
 
 //     return (
 //         <>
@@ -36,7 +50,15 @@
 //                     )}
 
 //                     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 lg:p-12">
-//                         <form onSubmit={handleSubmit}>
+//                         <form 
+//                             name="contact" 
+//                             method="POST" 
+//                             data-netlify="true" 
+//                             onSubmit={handleSubmit}
+//                         >
+//                             {/* Hidden input for Netlify */}
+//                             <input type="hidden" name="form-name" value="contact" />
+
 //                             <div className="mt-8">
 //                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
 //                                     Name
@@ -44,7 +66,9 @@
 //                                 <input
 //                                     type="text"
 //                                     id="name"
+//                                     name="name"
 //                                     placeholder="Your Name"
+//                                     required
 //                                     className="mt-2 w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-gray-200"
 //                                 />
 //                             </div>
@@ -56,7 +80,9 @@
 //                                 <input
 //                                     type="email"
 //                                     id="email"
+//                                     name="email"
 //                                     placeholder="Your Email"
+//                                     required
 //                                     className="mt-2 w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-gray-200"
 //                                 />
 //                             </div>
@@ -68,7 +94,9 @@
 //                                 <input
 //                                     type="text"
 //                                     id="subject"
+//                                     name="subject"
 //                                     placeholder="Subject"
+//                                     required
 //                                     className="mt-2 w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-gray-200"
 //                                 />
 //                             </div>
@@ -79,8 +107,10 @@
 //                                 </label>
 //                                 <textarea
 //                                     id="message"
+//                                     name="message"
 //                                     rows={5}
 //                                     placeholder="Your Message"
+//                                     required
 //                                     className="mt-2 w-full p-3 rounded-md border border-gray-300 dark:border-gray-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-gray-200"
 //                                 ></textarea>
 //                             </div>
@@ -130,7 +160,6 @@ const Contact = () => {
             })
             .catch((error) => alert(error));
     };
-    
 
     return (
         <>
