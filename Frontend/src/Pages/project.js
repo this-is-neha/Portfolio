@@ -21,6 +21,14 @@ const Projects = () => {
             codeLink: "https://github.com/this-is-neha/Complaint-Register-server",
         },
         {
+            title: "Catchup - A Cricket Portal for Nepal",
+            description:
+                "Catchup - A Cricket Portal for Nepal offers real-time updates on cricket tournaments, match stats, and player info. Built with React and Node.js, it provides a smooth, interactive user experience.",
+            technologies: ["React.js", "Tailwind CSS", "JavaScript","PostgreSQL"],
+            demoLink: "https://dbms-catch-up.vercel.app", 
+            codeLink: "https://github.com/kpabin0/CatchUp",
+        },
+        {
             title: "Portfolio Website",
             description:
                 "A personal portfolio website to showcase my skills, projects, and achievements. It features a modern design with responsive layouts and a smooth user experience.",

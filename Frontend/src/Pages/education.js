@@ -62,7 +62,7 @@ const EducationAndTrainings = () => {
       <Navbar />
       <div className="bg-gray-50 dark:bg-gray-900 py-16 min-h-screen">
         <div className="max-w-6xl mx-auto px-6 lg:px-10">
-          {/* Header */}
+        
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold text-gray-800 dark:text-white">
               Education & Trainings
@@ -73,7 +73,7 @@ const EducationAndTrainings = () => {
             </p>
           </div>
 
-          {/* Trainings */}
+          
           <div className="mb-16">
             <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">
               Trainings & Certifications
@@ -100,7 +100,7 @@ const EducationAndTrainings = () => {
             </div>
           </div>
 
-          {/* Education */}
+         
           <div className="mb-16">
             <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">
               Education
