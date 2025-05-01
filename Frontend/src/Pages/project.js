@@ -9,8 +9,10 @@ const Projects = () => {
             description:
                 "A robust e-commerce platform offering product listing, shopping cart, user authentication, and payment integration.",
             technologies: ["React.js", "Node.js", "Express.js", "MongoDB","Postman"],
-            demoLink: "https://your-demo-link.com",
+            demoLink: "https://this-is-nehaa.netlify.app",
             codeLink: "https://github.com/this-is-neha/Ecommerce",
+            email:"sjdvsjafh122@gmail.com",
+            password:"THAPATHALI078!a"
         },
         {
             title: "Nivaran - Complaint Register Platform",
@@ -19,6 +21,8 @@ const Projects = () => {
             technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Mapbox"],
             demoLink: "http://eclectic-entremet-69d9a6.netlify.app",
             codeLink: "https://github.com/this-is-neha/Complaint-Register-server",
+            email:"sjdvfhdvsvs122@gmail.com",
+            password:"THAPATHALI078!a"
         },
         {
             title: "Catchup - A Cricket Portal for Nepal",
@@ -27,6 +31,8 @@ const Projects = () => {
             technologies: ["React.js", "Tailwind CSS", "JavaScript","PostgreSQL"],
             demoLink: "https://dbms-catch-up.vercel.app", 
             codeLink: "https://github.com/kpabin0/CatchUp",
+            email:"for admin -admin123@gmail.com for user -user123@gmail.com",
+            password:"for admin -admin123 for user -user123"
         },
         {
             title: "Portfolio Website",
@@ -65,6 +71,12 @@ const Projects = () => {
                                 </h2>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                                     {project.description}
+                                </p>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                                  Use email  {project.email}
+                                </p>
+                                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                                  Use password  {project.password}
                                 </p>
                                 <p className="text-sm font-medium text-gray-700 dark:text-gray-400 mb-4">
                                     <span className="font-bold">Technologies:</span>{" "}
