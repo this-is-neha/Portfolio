@@ -3,6 +3,7 @@ import Navbar from "../Components/navbar";
 import Footer from "../Components/footer";
 
 const Projects = () => {
+    console.log("Projects component rendered");
     const projects = [
         {
             title: "E-Commerce Platform",
