@@ -5,7 +5,7 @@ import Navbar from "../Components/navbar";
 import photo1 from "../assets/image6.jpg";  
 import photo2 from "../assets/JavaScript frameworks-bro.png"; 
 import photo3 from "../assets/image3.png";
-
+import { NavLink } from "react-router-dom";
 
 const images = [photo1, photo3];
 
@@ -53,12 +53,12 @@ const Home = () => {
           <p className="text-xl text-gray-600">
             Passionate about growth, creativity, and technology. Let's explore new ideas and bring them to life!
           </p>
-          <a
-            href="/contact"
+          <NavLink
+            to ="/contact"
             className="inline-block mt-6 px-6 py-3 text-white bg-gradient-to-r from-teal-500 to-indigo-500 rounded-full font-semibold hover:scale-105 transition-transform"
           >
             Let's Connect
-          </a>
+          </NavLink>
         </motion.div>
 
         <motion.div
