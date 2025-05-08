@@ -27,7 +27,7 @@ const Skills = () => {
             category: "Tools & Platforms",
             items: [
                 "Git & GitHub",
-                "Docker",
+              
                 "VS Code",
             ],
         },
