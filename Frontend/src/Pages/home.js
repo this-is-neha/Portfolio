@@ -132,7 +132,7 @@ const Home = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto px-4 py-12">
           {[ 
-            { count: "4+", label: " Projects", color: "text-teal-500" },
+            { count: "6+", label: " Projects", color: "text-teal-500" },
             { count: "2", label: "Hackathons Participated", color: "text-indigo-500" },
             { count: "5+", label: "Clubs & Events Involved", color: "text-pink-500" },
           ].map((fact, i) => (

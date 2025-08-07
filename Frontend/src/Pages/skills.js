@@ -17,6 +17,8 @@ const Skills = () => {
                 "HTML",
                 "CSS3",
                 "Tailwind CSS",
+                "Django",
+                "Python"
             ],
         },
         {
