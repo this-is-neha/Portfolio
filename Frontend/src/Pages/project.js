@@ -22,7 +22,7 @@ const Projects = () => {
             technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Mapbox"],
             demoLink: "http://eclectic-entremet-69d9a6.netlify.app",
             codeLink: "https://github.com/this-is-neha/Complaint-Register-server",
-            email: "sjdvfhdvsvs122@gmail.com",
+            email: "sjdASKJNvfh122@gmail.com",
             password: "THAPATHALI078!a"
         },
         {
