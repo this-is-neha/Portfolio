@@ -4,6 +4,14 @@ import Footer from "../Components/footer";
 import { NavLink } from "react-router-dom";
 
 const EducationAndTrainings = () => {
+  const Internship=[{
+    title: "Frontend Intern",
+    organization: "Verisk Nepal",
+    year: "2025",
+    description:" Worked on building Inventory Managrment System for Verisk Nepak with features of resouce management, barcode generation and scanning .",
+    image: "/images/Verisk.jpg",
+  }]
+
   const education = [
     {
       degree: "Bachelor of Engineering in Computer Science",
@@ -73,6 +81,35 @@ const EducationAndTrainings = () => {
             </p>
           </div>
 
+
+
+
+  
+          <div className="mb-16">
+            <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">
+          Internships
+            </h2>
+            <div className="space-y-6">
+              {Internship.map((trainin, index) => (
+                <NavLink
+                  key={index}
+                  to={`/intern/${index}`}
+                  state={trainin}
+                  className="block bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition"
+                >
+                  <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                    {trainin.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {trainin.organization} <span>({trainin.year})</span>
+                  </p>
+                  <p className="mt-2 text-gray-600 dark:text-gray-300">
+                    {trainin.description}
+                  </p>
+                </NavLink>
+              ))}
+            </div>
+          </div>
           
           <div className="mb-16">
             <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">

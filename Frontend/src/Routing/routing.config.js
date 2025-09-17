@@ -8,6 +8,7 @@ import EducationAndTrainings from "../Pages/education";
 import DetailsPage from "../Pages/mern";
 import ReactPage from "../Pages/React";
 import OrbitPage from "../Pages/orbit";
+import Verisk from "../Pages/verisk";
 const RouterConfig = () => {
   return ( 
     <Routes>
@@ -19,6 +20,7 @@ const RouterConfig = () => {
       <Route path="/details/0" element={<DetailsPage />} />
       <Route path="/details/1" element={<ReactPage />} />
       <Route path="/details/2" element={<OrbitPage />} />
+      <Route path="/intern/0" element={<Verisk />} />
     </Routes>
   );
 };
