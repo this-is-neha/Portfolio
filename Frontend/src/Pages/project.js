@@ -37,7 +37,7 @@ const Projects = () => {
             password: "THAPATHALI078!a"
         },
         {
-            title: "Social Media Site (ongoing)",
+            title: "Social Media Site ",
             description:
                 "A social media platform built with the MERN stack, allowing users to create profiles, post updates, connect with friends, and interact through likes and comments.",
             technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Bootstrap/Tailwind", "REST API"],
