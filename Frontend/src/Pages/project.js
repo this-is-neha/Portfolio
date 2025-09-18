@@ -41,8 +41,11 @@ const Projects = () => {
             description:
                 "A social media platform built with the MERN stack, allowing users to create profiles, post updates, connect with friends, and interact through likes and comments.",
             technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Bootstrap/Tailwind", "REST API"],
-            demoLink: "https://social-media-demo-link.com", 
-            codeLink: "https://github.com/this-is-neha/Social"
+            demoLink: "https://instamediaa.netlify.app/", 
+            codeLink: "https://github.com/this-is-neha/Social",
+            username:" sushvhhna12@gmail.com",
+            password: "THAPATHALI078!a"
+
         },
         {
             title: "Catchup - A Cricket Portal for Nepal",
