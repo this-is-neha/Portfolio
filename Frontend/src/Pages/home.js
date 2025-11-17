@@ -130,7 +130,7 @@ const Home = () => {
           Whether it's designing intuitive interfaces or developing scalable backend systems, I aim to make meaningful impact through technology. 
           My academic journey has been shaped by curiosity, teamwork, and hands-on experiences — all fueling my commitment to innovation.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto px-4 py-12">
           {[ 
             { count: "6+", label: " Projects", color: "text-teal-500" },
             { count: "2", label: "Hackathons Participated", color: "text-indigo-500" },
