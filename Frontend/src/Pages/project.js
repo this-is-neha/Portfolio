@@ -58,6 +58,16 @@ const Projects = () => {
             password: "for admin -admin123 for user -user123"
         },
         {
+            title: "GoalGrid: Organize Your Day with Ease",
+            description:
+                "Stay productive and on top of your tasks with Goalgrid — plan, track, and achieve your goals effortlessly. Fast, smart, and beautifully designed for everyday life.",
+            technologies: ["React.js", "Tailwind CSS", "JavaScript", "PostgreSQL"],
+            demoLink: "https://goalggridd.netlify.app/",
+            codeLink: "https://github.com/this-is-neha/todo",
+           
+        },
+
+        {
             title: "Portfolio Website",
             description:
                 "A personal portfolio website to showcase my skills, projects, and achievements. It features a modern design with responsive layouts and a smooth user experience.",
