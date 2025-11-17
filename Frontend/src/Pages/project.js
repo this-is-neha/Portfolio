@@ -57,15 +57,20 @@ const Projects = () => {
             email: "for admin -admin123@gmail.com for user -user123@gmail.com",
             password: "for admin -admin123 for user -user123"
         },
-        {
-            title: "GoalGrid: Organize Your Day with Ease",
-            description:
-                "Stay productive and on top of your tasks with Goalgrid — plan, track, and achieve your goals effortlessly. Fast, smart, and beautifully designed for everyday life.",
-            technologies: ["React.js", "Tailwind CSS", "JavaScript", "PostgreSQL"],
-            demoLink: "https://goalggridd.netlify.app/",
-            codeLink: "https://github.com/this-is-neha/todo",
-           
-        },
+       {
+    title: "GoalGrid: Organize Your Day with Ease",
+    description:
+        "Stay productive and on top of your tasks with Goalgrid — plan, track, and achieve your goals effortlessly. Fast, smart, and beautifully designed for everyday life.",
+    technologies: ["React.js", "Tailwind CSS", "JavaScript", "PostgreSQL"],
+    demoLink: "https://goalggridd.netlify.app/",
+    codeLink: "https://github.com/this-is-neha/todo",
+    whyChoose: [
+        "Whether you’re a student, professional, or freelancer, Goalgrid helps you manage tasks efficiently, reduce stress, and focus on what matters most.",
+        "Track Progress: Instantly see what’s completed and what’s pending for clear productivity insights.",
+        "Custom Reminders: Set reminders and deadlines so you never miss an important task."
+    ]
+},
+
 
         {
             title: "Portfolio Website",
