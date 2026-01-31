@@ -12,6 +12,15 @@ const EducationAndTrainings = () => {
     image: "/images/Verisk.jpg",
   }]
 
+    const tutor=[{
+      title:"Home Tutor",
+      grade:"8",
+      year:"2025-2026",
+      subjects:"Science and Maths",
+      description:"I have been teaching a student of garde 8 "
+    }]
+  
+
   const education = [
 
     {
@@ -170,6 +179,41 @@ const EducationAndTrainings = () => {
               ))}
             </div>
           </div>
+
+
+  
+          <div className="mb-16">
+            <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-6">
+          Extra
+            </h2>
+            <div className="space-y-6">
+              {tutor.map((extra, index) => (
+                <NavLink
+                  key={index}
+                  to={`/extra/${index}`}
+                  state={extra}
+                  className="block bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition"
+                >
+                  <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-2">
+                    {extra.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {extra.garde} 
+                  </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                    Year: {extra.year} 
+                  </p>
+                    <p className="text-gray-600 dark:text-gray-300">
+                    Subjects: {extra.subjects} 
+                  </p>
+                  <p className="mt-2 text-gray-600 dark:text-gray-300">
+                    {extra.description}
+                  </p>
+                </NavLink>
+              ))}
+            </div>
+          </div>
+
         </div>
       </div>
       <Footer />

@@ -11,6 +11,7 @@ import OrbitPage from "../Pages/orbit";
 import Verisk from "../Pages/verisk";
 import Anais from "../Pages/anais"
 import Hack from "../Pages/hackathon"
+import Tutor from "../Pages/Extra"
 const RouterConfig = () => {
   return ( 
     <Routes>
@@ -25,6 +26,8 @@ const RouterConfig = () => {
       <Route path="/details/3" element={<OrbitPage />} />
       <Route path="/details/4" element={<Hack/>}/>
       <Route path="/intern/0" elemwent={<Verisk />} />
+      <Route path ="/extra/0" element={<Tutor/>}/>
+
     </Routes>
   );
 };
