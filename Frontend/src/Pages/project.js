@@ -4,6 +4,9 @@ import Footer from "../Components/footer";
 
 const Projects = () => {
     console.log("Projects component rendered");
+    console.log(
+        "Neha shah"
+    )
     const projects = [
         {
             title: "E-Commerce Platform",
