@@ -8,8 +8,6 @@ const ReactPage = () => {
   const { state } = useLocation();
     console.log("neha shah")
   if (!state) return <p className="text-center py-20">No data found.</p>;
-
-  
   console.log(state);
 
   const imageToShow =  photo2;
