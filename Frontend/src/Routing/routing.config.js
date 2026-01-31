@@ -9,6 +9,8 @@ import DetailsPage from "../Pages/mern";
 import ReactPage from "../Pages/React";
 import OrbitPage from "../Pages/orbit";
 import Verisk from "../Pages/verisk";
+import Anais from "../Pages/anais"
+import Hack from "../Pages/hackathon"
 const RouterConfig = () => {
   return ( 
     <Routes>
@@ -17,10 +19,12 @@ const RouterConfig = () => {
       <Route path="/skills" element={<Skills />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/learning" element={<EducationAndTrainings />} />
-      <Route path="/details/0" element={<DetailsPage />} />
-      <Route path="/details/1" element={<ReactPage />} />
-      <Route path="/details/2" element={<OrbitPage />} />
-      <Route path="/intern/0" element={<Verisk />} />
+      <Route path ="/details/0" element={<Anais/>}/>
+      <Route path="/details/1" element={<DetailsPage />} />
+      <Route path="/details/2" element={<ReactPage />} />
+      <Route path="/details/3" element={<OrbitPage />} />
+      <Route path="/details/4" element={<Hack/>}/>
+      <Route path="/intern/0" elemwent={<Verisk />} />
     </Routes>
   );
 };

@@ -13,6 +13,7 @@ const EducationAndTrainings = () => {
   }]
 
   const education = [
+
     {
       degree: "Bachelor of Engineering in Computer Science",
       institution: "Thapathali Campus, Tribhuvan University",
@@ -31,6 +32,14 @@ const EducationAndTrainings = () => {
   ];
 
   const trainings = [
+        {
+      title: "ANAIS (AnnuaL Neapl Artificial Intelligence School ",
+      organization: "NAAMI",
+      year: "2025-2026",
+      description:
+        "Focused on learning about Artifial Intelligence and its application",
+      image: "/images/Screenshot 2026-01-31 103946.png",
+    },
     {
       title: "MERN Stack Training",
       organization: "Broadway Infosys",
@@ -61,7 +70,7 @@ const EducationAndTrainings = () => {
       year: "2022",
       description:
         "Participated in a hackathon aimed at empowering women in technology.",
-      image: "/images/hackathon.jpg",
+      image: "/images/Hack.jpeg",
     },
   ];
 
