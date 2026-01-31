@@ -6,7 +6,7 @@ import photo2 from "../assets/Screenshot 2026-01-31 103946.png";
 
 const ReactPage = () => {
   const { state } = useLocation();
-
+    console.log("neha shah")
   if (!state) return <p className="text-center py-20">No data found.</p>;
 
   

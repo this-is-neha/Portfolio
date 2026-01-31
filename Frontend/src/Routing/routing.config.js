@@ -14,7 +14,9 @@ import Hack from "../Pages/hackathon"
 import Tutor from "../Pages/Extra"
 const RouterConfig = () => {
   return ( 
+
     <Routes>
+      
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/skills" element={<Skills />} />
