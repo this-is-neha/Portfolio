@@ -26,10 +26,10 @@ const ReactPage = () => {
             {state.year}
           </p>
            <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">
-            {state.grade}
+            Grade: {state.grade}
           </p>
              <p className="text-lg text-gray-600 dark:text-gray-300 mb-2">
-            {state.subjects}
+            Subjects: {state.subjects}
           </p>
           <p className="text-gray-700 dark:text-gray-300 mb-4">{state.description}</p>
           

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c0966f19.css",
+    "main.js": "/static/js/main.4083e461.js",
+    "static/media/React.png": "/static/media/React.ae5c907fe197a953e853.png",
+    "static/media/image3.png": "/static/media/image3.8ee3ea81fa5db5fbfd4f.png",
+    "static/media/Screenshot 2026-01-31 103946.png": "/static/media/Screenshot 2026-01-31 103946.8ead6212dfd1c877ce35.png",
+    "static/media/MERN.jpg": "/static/media/MERN.e87a805e69498dbe51bf.jpg",
+    "static/media/JavaScript frameworks-bro.png": "/static/media/JavaScript frameworks-bro.3c963fb2ec29da055844.png",
+    "static/media/Tutor.jpeg": "/static/media/Tutor.724df2a0a5c542560d7d.jpeg",
+    "static/media/orbit1.jpg": "/static/media/orbit1.3a4056078332966247d4.jpg",
+    "static/media/image6.jpg": "/static/media/image6.b10d6ff0106de7684cda.jpg",
+    "static/media/Hack.jpeg": "/static/media/Hack.02810b625de7bf3432b6.jpeg",
+    "static/media/Verisk.jpg": "/static/media/Verisk.4954c285d36efd38b352.jpg",
+    "index.html": "/index.html",
+    "main.c0966f19.css.map": "/static/css/main.c0966f19.css.map",
+    "main.4083e461.js.map": "/static/js/main.4083e461.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0966f19.css",
+    "static/js/main.4083e461.js"
+  ]
+}
