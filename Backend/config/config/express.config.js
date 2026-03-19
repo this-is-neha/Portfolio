@@ -13,12 +13,11 @@ const app = express();
 app.use(helmet());
 
 const corsOptions = {
-  origin: ['https://iamnehashah.netlify.app/', 'http://localhost:3000'], 
+  origin: ['https://iamnehashah.netlify.app', 'http://localhost:3000'], 
   allowedHeaders: ['Content-Type', 'Authorization'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
   credentials: true, 
 };
-
 
 app.use('/uploads', express.static('public/uploads', {
   setHeaders: (res, path) => {
@@ -30,7 +29,6 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 
 app.get("/", (req, res) => {
   res.json({
