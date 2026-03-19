@@ -5,37 +5,83 @@ import Footer from "../Components/footer";
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const form = e.target;
-    const data = new FormData(form);
-    const formData = Object.fromEntries(data.entries());
+  //   const form = e.target;
+  //   const data = new FormData(form);
+  //   const formData = Object.fromEntries(data.entries());
 
-    try {
-      const response = await fetch("http://localhost:9004/auth/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+  //   try {
+  //     const response = await fetch("http://localhost:9004/auth/", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(formData),
+  //     });
 
-      const result = await response.json();
+  //     const result = await response.json();
 
-      if (response.ok) {
-        setShowPopup(true);
-        setTimeout(() => setShowPopup(false), 4000); 
-        form.reset();
-      } else {
-        alert(result.message || "Failed to send message");
-      }
-    } catch (error) {
-      console.error(error);
-      alert("Error sending message");
+  //     if (response.ok) {
+  //       setShowPopup(true);
+  //       setTimeout(() => setShowPopup(false), 4000); 
+  //       form.reset();
+  //     } else {
+  //       alert(result.message || "Failed to send message");
+  //     }
+  //   } catch (error) {
+  //     console.error(error);
+  //     alert("Error sending message");
+  //   }
+  // };
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+  const formData = Object.fromEntries(data.entries());
+
+  console.log("Form data:", formData);
+
+  try {
+  
+    const responseCreate = await fetch("http://localhost:9004/auth/create", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    const resultCreate = await responseCreate.json();
+    console.log("auth/create response:", resultCreate);
+
+    if (!responseCreate.ok) {
+      alert(resultCreate.message || "Failed at auth/create");
+      return; // stop if first API fails
     }
-  };
 
+    // Second API call: auth/
+    const responseAuth = await fetch("http://localhost:9004/auth/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    const resultAuth = await responseAuth.json();
+    console.log("auth/ response:", resultAuth);
+
+    if (responseAuth.ok) {
+      setShowPopup(true);
+      form.reset();
+      setTimeout(() => setShowPopup(false), 4000);
+    } else {
+      alert(resultAuth.message || "Failed at auth/");
+    }
+  } catch (error) {
+    console.error("Error sending message:", error);
+    alert("Error sending message");
+  }
+};
   return (
     <>
       <Navbar />
