@@ -48,7 +48,7 @@ const handleSubmit = async (e) => {
 
   try {
   
-    const responseCreate = await fetch("http://localhost:9004/auth/create", {
+    const responseCreate = await fetch("https://neha-shah.onrender.com/auth/create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -62,7 +62,7 @@ const handleSubmit = async (e) => {
     }
 
     // Second API call: auth/
-    const responseAuth = await fetch("http://localhost:9004/auth/", {
+    const responseAuth = await fetch("https://neha-shah.onrender.com/auth/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
