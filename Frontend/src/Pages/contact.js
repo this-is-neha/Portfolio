@@ -5,36 +5,7 @@ import Footer from "../Components/footer";
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
 
-  //   const form = e.target;
-  //   const data = new FormData(form);
-  //   const formData = Object.fromEntries(data.entries());
-
-  //   try {
-  //     const response = await fetch("http://localhost:9004/auth/", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(formData),
-  //     });
-
-  //     const result = await response.json();
-
-  //     if (response.ok) {
-  //       setShowPopup(true);
-  //       setTimeout(() => setShowPopup(false), 4000); 
-  //       form.reset();
-  //     } else {
-  //       alert(result.message || "Failed to send message");
-  //     }
-  //   } catch (error) {
-  //     console.error(error);
-  //     alert("Error sending message");
-  //   }
-  // };
 
 
 const handleSubmit = async (e) => {
@@ -48,7 +19,7 @@ const handleSubmit = async (e) => {
 
   try {
   
-    const responseCreate = await fetch("https://neha-shah.onrender.com/auth/create", {
+    const responseCreate = await fetch("http://localhost:9004/auth/create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -58,11 +29,11 @@ const handleSubmit = async (e) => {
 
     if (!responseCreate.ok) {
       alert(resultCreate.message || "Failed at auth/create");
-      return; // stop if first API fails
+      return; 
     }
 
-    // Second API call: auth/
-    const responseAuth = await fetch("https://neha-shah.onrender.com/auth/", {
+   
+    const responseAuth = await fetch("http://localhost:9004/auth/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -97,10 +68,10 @@ const handleSubmit = async (e) => {
             </p>
           </div>
 
-          {/* Popup */}
+         
           {showPopup && (
             <div className="fixed top-5 right-5 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 animate-slide-in">
-              ✅ Message sent successfully!
+               Message sent successfully!
             </div>
           )}
 
