@@ -9,7 +9,7 @@ const DetailsPage = () => {
 
   if (!state) return <p className="text-center py-20">No data found.</p>;
 
-  
+
   const imageToShow = photo2;
 
   return (

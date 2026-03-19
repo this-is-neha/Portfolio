@@ -27,7 +27,7 @@ const RouterConfig = () => {
       <Route path="/details/2" element={<ReactPage />} />
       <Route path="/details/3" element={<OrbitPage />} />
       <Route path="/details/4" element={<Hack/>}/>
-      <Route path="/intern/0" elemwent={<Verisk />} />
+      <Route path="/intern/0" element={<Verisk />} />
       <Route path ="/extra/0" element={<Tutor/>}/>
 
     </Routes>

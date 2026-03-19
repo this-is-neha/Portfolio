@@ -24,8 +24,8 @@ const Contact = () => {
       const result = await response.json();
 
       if (response.ok) {
-        setShowPopup(true); // show popup
-        setTimeout(() => setShowPopup(false), 4000); // hide after 4 seconds
+        setShowPopup(true);
+        setTimeout(() => setShowPopup(false), 4000); 
         form.reset();
       } else {
         alert(result.message || "Failed to send message");
