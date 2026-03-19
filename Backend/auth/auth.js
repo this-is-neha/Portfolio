@@ -10,7 +10,7 @@ class AuthController {
 
     try {
         await mailSvc.sendEmail(
-            process.env.SMTP_USER, // send to yourself
+            process.env.SMTP_USER, 
             `Contact Form: ${subject}`,
             `<p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>

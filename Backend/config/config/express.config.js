@@ -7,9 +7,7 @@ const Joi = require("joi");
 
 require("./db.config");
 const mainRouter = require("./routing.config");
-
 const app = express();
-
 app.use(helmet());
 
 const corsOptions = {
